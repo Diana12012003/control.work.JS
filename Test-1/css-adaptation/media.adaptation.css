@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+    .wrapper {
+        height: 750px;
+    }
+    .parallel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input input, select {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .buttons button {
+        width: auto;
+    }
+}
