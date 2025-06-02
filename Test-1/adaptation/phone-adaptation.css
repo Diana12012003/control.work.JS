@@ -1,12 +1,15 @@
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .wrapper {
+        display: flex;
+        align-items: center;
         height: 750px;
+        width: 100%;
     }
     .parallel {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
-
     .input input, select {
         width: 100%;
     }

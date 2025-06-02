@@ -37,7 +37,7 @@ body {
     gap: 50px;
 }
 
-/* Поле введення */
+/* введення значень */
 .input {
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@ body {
 .input button:hover {
     background-color: #808080;
 }
-
+/*...форма...*/
 .adding {
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ select {
     border-radius: 5px;
     margin-bottom: 15px;
 }
-
+/*....кнопки....*/
 .parallel {
     display: flex;
     flex-direction: row;
@@ -115,3 +115,9 @@ select {
 .buttons button:hover {
     background-color: #808080;
 }
+
+#errorMessage {
+    font-size: 20px;
+    color: rgba(255,0,0,0.43);
+}
+
