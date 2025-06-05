@@ -9,12 +9,12 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
 
             userBlock.innerHTML = `
                 <h2>${user.name}</h2>
-                <p><b>ID:</b> ${user.id}</p>
-                <a href="users/user-details.html?id=${user.id}">Деталі</a>
+            <p><b>ID:</b> ${user.id}</p>
+                <a href="../user-details/user-details.html?id=${user.id}">Деталі</a>
                 
             `;
             console.log("USER ID for details:", user.id);
-            container.appendChild(userBlock);
+            container.appendChild(userBlock)
         });
     })
     .catch(error => console.error("Помилка завантаження користувачів", error));
