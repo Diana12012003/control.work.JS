@@ -1,0 +1,29 @@
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.user-block {
+    border: 2px solid #ccc;
+    padding: 15px;
+    background: #f9f9f9;
+    text-align: center;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.user-block a {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: rgba(8, 68, 128, 0.8);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+    margin-right: 325px;
+}
