@@ -1,5 +1,10 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .users-grid {
     display: grid;
+    justify-content: center;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     padding: 20px;
@@ -25,5 +30,4 @@
 }
 h1 {
     text-align: center;
-    margin-right: 325px;
 }

@@ -1,9 +1,15 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .user-block {
     border: 2px solid #ccc;
     padding: 15px;
     background: #f9f9f9;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+.user-block h2 {
+    color: rgba(0, 123, 255, 0.47);
 }
 
 .load-posts {

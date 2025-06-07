@@ -1,6 +1,4 @@
 const userId = new URLSearchParams(window.location.search).get("id");
-console.log("URL:", window.location.href);
-console.log("Отриманий ID:", userId);
 
 if (userId) {
     fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
@@ -8,7 +6,6 @@ if (userId) {
         .then(userData => {
             const userContainer = document.getElementById("userContainer");
 
-            console.log("USER:", userData);
             let userBlock = document.createElement("div");
             userBlock.classList.add("user-block");
             userBlock.innerHTML = `
@@ -36,14 +33,16 @@ if (userId) {
                     <li><b>CatchPhrase:</b> ${userData.company.catchPhrase}</li>
                     <li><b>bs:</b> ${userData.company.bs}</li>
                 </ul>
-                <button class="load-posts" data-user-id="${userData.id}">Posts of current user</button>
-                <div class="posts-container"></div>
+               <button class="load-posts" data-user-id="${userData.id}">Posts of current user</button>
+               <div class="posts-container"></div>
             `;
+
 
             userContainer.appendChild(userBlock);
 
             let button = userBlock.querySelector(".load-posts");
             let postsContainer = userBlock.querySelector(".posts-container");
+
 
             button.addEventListener("click", function () {
                 if (postsContainer.style.display === "none") {
@@ -58,7 +57,7 @@ if (userId) {
 
                                 postBlock.innerHTML = `
                                     <h3>${post.title}</h3>
-                                    <a href="post-details.html?id=${post.id}">View Post</a>
+                                    <a href="../post-details/post-details.html?id=${post.id}">View Post</a>
                                 `;
 
                                 postsContainer.appendChild(postBlock);

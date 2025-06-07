@@ -11,8 +11,7 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
                 <h2>${user.name}</h2>
             <p><b>ID:</b> ${user.id}</p>
                 <a href="../user-details/user-details.html?id=${user.id}">Деталі</a>
-                
-            `;
+                 `;
             console.log("USER ID for details:", user.id);
             container.appendChild(userBlock)
         });
