@@ -27,8 +27,6 @@ body h2:nth-child(2) {
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
-    /*display: inline-block;*/
-    /*width: calc(25% - 20px);*/
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
  {
